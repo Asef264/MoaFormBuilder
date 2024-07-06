@@ -15,8 +15,8 @@ func serverInit() {
 	err := pg.Pgdb.AutoMigrate(
 		&models.Register{},
 		&models.FormFieldSelection{},
-		&models.File{},
-		&models.StaticForm{},
+		// &models.File{},
+		// &models.StaticForm{},
 	)
 	if err != nil {
 		panic("failed on connecting db")
