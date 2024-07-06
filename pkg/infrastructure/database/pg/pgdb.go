@@ -23,3 +23,5 @@ func PgInit() {
 	fmt.Println("db connected ...")
 	Pgdb = pdb
 }
+
+// you need to create your database first. manually
