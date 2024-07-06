@@ -2,6 +2,7 @@ package main
 
 import (
 	"moaformbuilder/internal/models"
+	"moaformbuilder/internal/presentation"
 	"moaformbuilder/pkg/infrastructure/database/pg"
 )
 
@@ -20,4 +21,5 @@ func serverInit() {
 	if err != nil {
 		panic("failed on connecting db")
 	}
+	presentation.PresentationInit()
 }
