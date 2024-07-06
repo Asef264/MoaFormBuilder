@@ -15,7 +15,7 @@ func PgInit() {
 		msg := recover()
 		fmt.Println(msg)
 	}()
-	dsn := "host=localhost user=user password=password dbname=moaForm sslmode=disable"
+	dsn := "host=localhost user=user password=password dbname=moaformbuilder sslmode=disable"
 	pdb, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err)
